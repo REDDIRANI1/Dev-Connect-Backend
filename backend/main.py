@@ -1,11 +1,11 @@
 from fastapi import FastAPI
-from .routes import auth
-from .database import Base, engine
+from routes import auth
+from database import Base, engine
 from fastapi.middleware.cors import CORSMiddleware
-from .routes import profile
-from .routes import project
-from .routes import comment
-from .routes import search
+from routes import profile
+from routes import project
+from routes import comment
+from routes import search
 
 app = FastAPI()
 app.add_middleware(
