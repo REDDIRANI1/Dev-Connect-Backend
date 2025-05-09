@@ -10,7 +10,7 @@ from routes import search
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # You can restrict this to your frontend's origin in production
+    allow_origins=["*","https://dev-connect-frontend-wv22.vercel.app"],  # You can restrict this to your frontend's origin in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
